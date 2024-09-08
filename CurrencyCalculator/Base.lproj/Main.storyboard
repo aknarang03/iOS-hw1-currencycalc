@@ -116,9 +116,8 @@
                                     <constraint firstItem="Xcx-w3-CeO" firstAttribute="top" secondItem="orB-Xr-LRl" secondAttribute="bottom" constant="29.999999999999517" id="DST-AQ-VB2"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8g-ex-jmj">
-                                <rect key="frame" x="164" y="424" width="65" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8g-ex-jmj">
+                                <rect key="frame" x="164.33333333333334" y="424" width="64.333333333333343" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Enter"/>
                                 <connections>
@@ -130,8 +129,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LXh-id-eDw" firstAttribute="trailing" secondItem="FNP-oL-2Xy" secondAttribute="trailing" constant="30" id="8Rc-Nt-IGJ"/>
+                            <constraint firstItem="D8g-ex-jmj" firstAttribute="centerX" secondItem="LXh-id-eDw" secondAttribute="centerX" id="9v9-FO-TnH"/>
                             <constraint firstItem="Xcx-w3-CeO" firstAttribute="centerX" secondItem="LXh-id-eDw" secondAttribute="centerX" id="MDR-CC-3K5"/>
                             <constraint firstItem="FNP-oL-2Xy" firstAttribute="leading" secondItem="LXh-id-eDw" secondAttribute="leading" constant="30" id="NZe-IU-Anq"/>
+                            <constraint firstItem="D8g-ex-jmj" firstAttribute="top" secondItem="FNP-oL-2Xy" secondAttribute="bottom" constant="18.333333333333258" id="pFm-FF-rEE"/>
                             <constraint firstItem="FNP-oL-2Xy" firstAttribute="top" secondItem="LXh-id-eDw" secondAttribute="top" constant="70" id="tag-N2-toD"/>
                         </constraints>
                     </view>
