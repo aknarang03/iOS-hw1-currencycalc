@@ -24,7 +24,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FNP-oL-2Xy" userLabel="Calculator View">
-                                <rect key="frame" x="30" y="129" width="333" height="162.33333333333337"/>
+                                <rect key="frame" x="30" y="129" width="333" height="178"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-Az-hcb" userLabel="Dollar View">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="34"/>
@@ -58,11 +58,11 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="orB-Xr-LRl" userLabel="Button View">
-                                        <rect key="frame" x="0.0" y="127.99999999999999" width="333" height="34.333333333333329"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7rD-UG-uBr" userLabel="Button View">
+                                        <rect key="frame" x="0.0" y="128" width="333" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KZ-MT-S1l">
-                                                <rect key="frame" x="0.0" y="0.0" width="117" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="8" width="71.333333333333329" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="$ -&gt; €"/>
                                                 <connections>
@@ -70,18 +70,18 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCY-oM-mOt">
-                                                <rect key="frame" x="216" y="0.0" width="117" height="34.333333333333336"/>
+                                                <rect key="frame" x="91.333333333333343" y="8" width="71.333333333333343" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="€ -&gt; $"/>
                                                 <connections>
                                                     <action selector="convertToDollar:" destination="X0F-ng-7Ht" eventType="touchUpInside" id="knD-Ba-aUB"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-nx-YPp" userLabel="Spacer">
+                                                <rect key="frame" x="182.66666666666663" y="0.0" width="150.33333333333337" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="PCY-oM-mOt" firstAttribute="width" secondItem="3KZ-MT-S1l" secondAttribute="width" id="XAM-D9-0zw"/>
-                                            <constraint firstItem="PCY-oM-mOt" firstAttribute="height" secondItem="3KZ-MT-S1l" secondAttribute="height" id="etQ-CR-BVH"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -127,17 +127,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZaI-uq-ea4">
-                                <rect key="frame" x="96" y="371" width="200" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LXh-id-eDw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XTc-j1-XQW" firstAttribute="leading" secondItem="LXh-id-eDw" secondAttribute="leading" constant="30" id="7uL-XF-YAL"/>
                             <constraint firstItem="LXh-id-eDw" firstAttribute="trailing" secondItem="FNP-oL-2Xy" secondAttribute="trailing" constant="30" id="8Rc-Nt-IGJ"/>
-                            <constraint firstItem="XTc-j1-XQW" firstAttribute="top" secondItem="FNP-oL-2Xy" secondAttribute="bottom" constant="72.666666666666629" id="BdH-qx-Yf9"/>
+                            <constraint firstItem="XTc-j1-XQW" firstAttribute="top" secondItem="FNP-oL-2Xy" secondAttribute="bottom" constant="57" id="HrU-LE-5Vw"/>
                             <constraint firstItem="FNP-oL-2Xy" firstAttribute="leading" secondItem="LXh-id-eDw" secondAttribute="leading" constant="30" id="NZe-IU-Anq"/>
                             <constraint firstItem="FNP-oL-2Xy" firstAttribute="top" secondItem="LXh-id-eDw" secondAttribute="top" constant="70" id="tag-N2-toD"/>
                         </constraints>
