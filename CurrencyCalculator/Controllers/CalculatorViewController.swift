@@ -32,7 +32,7 @@ class CalculatorViewController: UIViewController {
             euros = calculator.dollarToEuro(dollar: dollar)
         }
         euroAmount.text = String (format: "%.2f", euros)
-        view.endEditing(true)
+        view.endEditing(true) // collapse keyboard
     }
     
     @IBAction func convertToDollar(_ sender: UIButton) {
@@ -41,7 +41,7 @@ class CalculatorViewController: UIViewController {
             dollars = calculator.euroToDollar(euro: euro)
         }
         dollarAmount.text = String (format: "%.2f", dollars)
-        view.endEditing(true)
+        view.endEditing(true) // collapse keyboard
     }
     
     @IBAction func changeConversionFactor(_ sender: UIButton) {
@@ -52,7 +52,7 @@ class CalculatorViewController: UIViewController {
             calculator.setConversionFactor(rate: 0.00)
             conversionFactor.text = String ("0.00")
         }
-        view.endEditing(true)
+        view.endEditing(true) // collapse keyboard
     }
     
 }
